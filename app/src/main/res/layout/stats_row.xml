@@ -31,7 +31,7 @@
         android:layout_marginStart="28dp"
         android:text="Rebounds:"
         app:layout_constraintStart_toEndOf="@+id/textView16"
-        app:layout_constraintTop_toTopOf="@+id/textView17" />
+        app:layout_constraintTop_toTopOf="@+id/textViewPoints" />
 
     <TextView
         android:id="@+id/textView36"
@@ -39,8 +39,8 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
         android:text="Assists:"
-        app:layout_constraintStart_toEndOf="@+id/textView35"
-        app:layout_constraintTop_toTopOf="@+id/textView35" />
+        app:layout_constraintStart_toEndOf="@+id/textViewRebounds"
+        app:layout_constraintTop_toTopOf="@+id/textViewRebounds" />
 
     <TextView
         android:id="@+id/textView38"
@@ -48,11 +48,11 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="12dp"
         android:text="Steals:"
-        app:layout_constraintStart_toEndOf="@+id/textView37"
-        app:layout_constraintTop_toTopOf="@+id/textView37" />
+        app:layout_constraintStart_toEndOf="@+id/textViewAssists"
+        app:layout_constraintTop_toTopOf="@+id/textViewAssists" />
 
     <TextView
-        android:id="@+id/textView39"
+        android:id="@+id/textViewSteals"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
@@ -61,7 +61,7 @@
         app:layout_constraintTop_toTopOf="@+id/textView38" />
 
     <TextView
-        android:id="@+id/textView37"
+        android:id="@+id/textViewAssists"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
@@ -70,7 +70,7 @@
         app:layout_constraintTop_toTopOf="@+id/textView36" />
 
     <TextView
-        android:id="@+id/textView35"
+        android:id="@+id/textViewRebounds"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
@@ -79,7 +79,7 @@
         app:layout_constraintTop_toTopOf="@+id/textView34" />
 
     <TextView
-        android:id="@+id/textView17"
+        android:id="@+id/textViewPoints"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
@@ -98,7 +98,7 @@
         app:layout_constraintTop_toBottomOf="@+id/textView14" />
 
     <TextView
-        android:id="@+id/textView41"
+        android:id="@+id/textViewBlocks"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
@@ -112,11 +112,11 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
         android:text="FG%:"
-        app:layout_constraintStart_toEndOf="@+id/textView41"
-        app:layout_constraintTop_toTopOf="@+id/textView41" />
+        app:layout_constraintStart_toEndOf="@+id/textViewBlocks"
+        app:layout_constraintTop_toTopOf="@+id/textViewBlocks" />
 
     <TextView
-        android:id="@+id/textView44"
+        android:id="@+id/textViewFg"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
@@ -130,11 +130,11 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="24dp"
         android:text="3P%:"
-        app:layout_constraintStart_toEndOf="@+id/textView44"
-        app:layout_constraintTop_toTopOf="@+id/textView44" />
+        app:layout_constraintStart_toEndOf="@+id/textViewFg"
+        app:layout_constraintTop_toTopOf="@+id/textViewFg" />
 
     <TextView
-        android:id="@+id/textView46"
+        android:id="@+id/textView3p"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
@@ -148,11 +148,11 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="28dp"
         android:text="FT%:"
-        app:layout_constraintStart_toEndOf="@+id/textView46"
-        app:layout_constraintTop_toTopOf="@+id/textView46" />
+        app:layout_constraintStart_toEndOf="@+id/textView3p"
+        app:layout_constraintTop_toTopOf="@+id/textView3p" />
 
     <TextView
-        android:id="@+id/textView48"
+        android:id="@+id/textViewFt"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="8dp"

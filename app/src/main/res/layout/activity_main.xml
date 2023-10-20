@@ -13,8 +13,8 @@
         android:layout_marginStart="16dp"
         android:text="Rebounds:"
         android:textAppearance="@style/TextAppearance.AppCompat.Medium"
-        app:layout_constraintStart_toEndOf="@+id/editTextNumber"
-        app:layout_constraintTop_toTopOf="@+id/editTextNumber" />
+        app:layout_constraintStart_toEndOf="@+id/editTextPoints"
+        app:layout_constraintTop_toTopOf="@+id/editTextPoints" />
 
     <TextView
         android:id="@+id/textView"
@@ -57,8 +57,8 @@
         android:layout_marginEnd="8dp"
         android:text="Steals:"
         android:textAppearance="@style/TextAppearance.AppCompat.Medium"
-        app:layout_constraintEnd_toStartOf="@+id/editTextNumber6"
-        app:layout_constraintTop_toTopOf="@+id/editTextNumber3" />
+        app:layout_constraintEnd_toStartOf="@+id/editTextSteals"
+        app:layout_constraintTop_toTopOf="@+id/editTextAssists" />
 
     <TextView
         android:id="@+id/textView4"
@@ -72,7 +72,7 @@
         app:layout_constraintTop_toBottomOf="@+id/textView2" />
 
     <EditText
-        android:id="@+id/editTextNumber"
+        android:id="@+id/editTextPoints"
         android:layout_width="100dp"
         android:layout_height="36dp"
         android:layout_marginStart="16dp"
@@ -82,7 +82,7 @@
         app:layout_constraintTop_toTopOf="@+id/textView2" />
 
     <EditText
-        android:id="@+id/editTextNumber7"
+        android:id="@+id/editTextBlocks"
         android:layout_width="100dp"
         android:layout_height="36dp"
         android:layout_marginEnd="60dp"
@@ -94,7 +94,7 @@
         app:layout_constraintTop_toTopOf="@+id/textView9" />
 
     <EditText
-        android:id="@+id/editTextNumber3"
+        android:id="@+id/editTextAssists"
         android:layout_width="100dp"
         android:layout_height="36dp"
         android:layout_marginEnd="48dp"
@@ -104,7 +104,7 @@
         app:layout_constraintTop_toTopOf="@+id/textView4" />
 
     <EditText
-        android:id="@+id/editTextNumber6"
+        android:id="@+id/editTextSteals"
         android:layout_width="100dp"
         android:layout_height="36dp"
         android:layout_marginEnd="16dp"
@@ -120,8 +120,8 @@
         android:layout_marginEnd="8dp"
         android:text="FGM:"
         android:textAppearance="@style/TextAppearance.AppCompat.Medium"
-        app:layout_constraintEnd_toStartOf="@+id/editTextNumber4"
-        app:layout_constraintTop_toTopOf="@+id/editTextNumber7" />
+        app:layout_constraintEnd_toStartOf="@+id/editTextFgm"
+        app:layout_constraintTop_toTopOf="@+id/editTextBlocks" />
 
     <TextView
         android:id="@+id/textView10"
@@ -130,8 +130,8 @@
         android:layout_marginStart="56dp"
         android:text="3PM:"
         android:textAppearance="@style/TextAppearance.AppCompat.Medium"
-        app:layout_constraintStart_toEndOf="@+id/editTextNumber5"
-        app:layout_constraintTop_toTopOf="@+id/editTextNumber5" />
+        app:layout_constraintStart_toEndOf="@+id/editTextFga"
+        app:layout_constraintTop_toTopOf="@+id/editTextFga" />
 
     <TextView
         android:id="@+id/textView12"
@@ -140,8 +140,8 @@
         android:layout_marginEnd="8dp"
         android:text="FTA:"
         android:textAppearance="@style/TextAppearance.AppCompat.Medium"
-        app:layout_constraintEnd_toStartOf="@+id/editTextNumber12"
-        app:layout_constraintTop_toTopOf="@+id/editTextNumber11" />
+        app:layout_constraintEnd_toStartOf="@+id/editTextFta"
+        app:layout_constraintTop_toTopOf="@+id/editTextFtm" />
 
     <TextView
         android:id="@+id/textView13"
@@ -150,8 +150,8 @@
         android:layout_marginEnd="8dp"
         android:text="FTM:"
         android:textAppearance="@style/TextAppearance.AppCompat.Medium"
-        app:layout_constraintEnd_toStartOf="@+id/editTextNumber11"
-        app:layout_constraintTop_toTopOf="@+id/editTextNumber9" />
+        app:layout_constraintEnd_toStartOf="@+id/editTextFtm"
+        app:layout_constraintTop_toTopOf="@+id/editText3pa" />
 
     <TextView
         android:id="@+id/textView11"
@@ -165,7 +165,7 @@
         app:layout_constraintTop_toBottomOf="@+id/textView6" />
 
     <EditText
-        android:id="@+id/editTextNumber9"
+        android:id="@+id/editText3pa"
         android:layout_width="74dp"
         android:layout_height="34dp"
         android:layout_marginEnd="8dp"
@@ -175,7 +175,7 @@
         app:layout_constraintTop_toTopOf="@+id/textView11" />
 
     <EditText
-        android:id="@+id/editTextNumber11"
+        android:id="@+id/editTextFtm"
         android:layout_width="74dp"
         android:layout_height="33dp"
         android:layout_marginEnd="8dp"
@@ -185,7 +185,7 @@
         app:layout_constraintTop_toTopOf="@+id/textView13" />
 
     <EditText
-        android:id="@+id/editTextNumber12"
+        android:id="@+id/editTextFta"
         android:layout_width="77dp"
         android:layout_height="33dp"
         android:layout_marginEnd="16dp"
@@ -195,7 +195,7 @@
         app:layout_constraintTop_toTopOf="@+id/textView12" />
 
     <EditText
-        android:id="@+id/editTextNumber4"
+        android:id="@+id/editTextFgm"
         android:layout_width="100dp"
         android:layout_height="36dp"
         android:layout_marginEnd="16dp"
@@ -205,7 +205,7 @@
         app:layout_constraintTop_toTopOf="@+id/textView5" />
 
     <EditText
-        android:id="@+id/editTextNumber8"
+        android:id="@+id/editText3pm"
         android:layout_width="100dp"
         android:layout_height="36dp"
         android:layout_marginEnd="16dp"
@@ -228,7 +228,7 @@
         app:layout_constraintTop_toBottomOf="@+id/textView9" />
 
     <EditText
-        android:id="@+id/editTextNumber5"
+        android:id="@+id/editTextFga"
         android:layout_width="100dp"
         android:layout_height="36dp"
         android:layout_marginStart="32dp"
@@ -238,7 +238,7 @@
         app:layout_constraintTop_toTopOf="@+id/textView6" />
 
     <EditText
-        android:id="@+id/editTextNumber2"
+        android:id="@+id/editTextRebounds"
         android:layout_width="100dp"
         android:layout_height="36dp"
         android:layout_marginEnd="16dp"
@@ -250,15 +250,16 @@
         app:layout_constraintTop_toTopOf="@+id/textView3" />
 
     <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerViewStats"
         android:layout_width="409dp"
         android:layout_height="370dp"
-        app:layout_constraintBottom_toTopOf="@+id/button"
+        app:layout_constraintBottom_toTopOf="@+id/buttonAverages"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editTextNumber11" />
+        app:layout_constraintTop_toBottomOf="@+id/editTextFtm" />
 
     <Button
-        android:id="@+id/button"
+        android:id="@+id/buttonAverages"
         style="@style/Widget.AppCompat.Button"
         android:layout_width="0dp"
         android:layout_height="wrap_content"

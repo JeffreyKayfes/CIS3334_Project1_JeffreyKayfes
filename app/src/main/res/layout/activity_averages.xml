@@ -25,8 +25,8 @@
         android:layout_marginEnd="9dp"
         android:text="Points:"
         android:textAppearance="@style/TextAppearance.AppCompat.Medium"
-        app:layout_constraintBaseline_toBaselineOf="@+id/textView19"
-        app:layout_constraintEnd_toStartOf="@+id/textView19"
+        app:layout_constraintBaseline_toBaselineOf="@+id/textViewPointsAverage"
+        app:layout_constraintEnd_toStartOf="@+id/textViewPointsAverage"
         app:layout_constraintHorizontal_chainStyle="packed"
         app:layout_constraintStart_toStartOf="parent" />
 
@@ -36,7 +36,7 @@
         android:layout_height="wrap_content"
         android:text="Rebounds:"
         android:textAppearance="@style/TextAppearance.AppCompat.Medium"
-        app:layout_constraintBaseline_toBaselineOf="@+id/textView21"
+        app:layout_constraintBaseline_toBaselineOf="@+id/textViewReboundsAverage"
         app:layout_constraintEnd_toEndOf="@+id/textView18" />
 
     <TextView
@@ -45,7 +45,7 @@
         android:layout_height="wrap_content"
         android:text="Assists:"
         android:textAppearance="@style/TextAppearance.AppCompat.Medium"
-        app:layout_constraintBaseline_toBaselineOf="@+id/textView23"
+        app:layout_constraintBaseline_toBaselineOf="@+id/textViewAssistsAverage"
         app:layout_constraintEnd_toEndOf="@+id/textView20" />
 
     <TextView
@@ -54,11 +54,11 @@
         android:layout_height="wrap_content"
         android:text="Steals:"
         android:textAppearance="@style/TextAppearance.AppCompat.Medium"
-        app:layout_constraintBaseline_toBaselineOf="@+id/textView25"
+        app:layout_constraintBaseline_toBaselineOf="@+id/textViewStealsAverage"
         app:layout_constraintEnd_toEndOf="@+id/textView22" />
 
     <TextView
-        android:id="@+id/textView25"
+        android:id="@+id/textViewStealsAverage"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="9dp"
@@ -66,7 +66,7 @@
         android:text="0.00"
         android:textAppearance="@style/TextAppearance.AppCompat.Medium"
         app:layout_constraintStart_toEndOf="@+id/textView24"
-        app:layout_constraintTop_toBottomOf="@+id/textView23" />
+        app:layout_constraintTop_toBottomOf="@+id/textViewAssistsAverage" />
 
     <TextView
         android:id="@+id/textView26"
@@ -74,7 +74,7 @@
         android:layout_height="wrap_content"
         android:text="Blocks:"
         android:textAppearance="@style/TextAppearance.AppCompat.Medium"
-        app:layout_constraintBaseline_toBaselineOf="@+id/textView27"
+        app:layout_constraintBaseline_toBaselineOf="@+id/textViewBlocksAverage"
         app:layout_constraintEnd_toEndOf="@+id/textView24" />
 
     <TextView
@@ -83,11 +83,11 @@
         android:layout_height="wrap_content"
         android:text="FG%:"
         android:textAppearance="@style/TextAppearance.AppCompat.Medium"
-        app:layout_constraintBaseline_toBaselineOf="@+id/textView31"
+        app:layout_constraintBaseline_toBaselineOf="@+id/textViewFgAverage"
         app:layout_constraintEnd_toEndOf="@+id/textView26" />
 
     <TextView
-        android:id="@+id/textView31"
+        android:id="@+id/textViewFgAverage"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="9dp"
@@ -95,7 +95,7 @@
         android:text="0%"
         android:textAppearance="@style/TextAppearance.AppCompat.Medium"
         app:layout_constraintStart_toEndOf="@+id/textView28"
-        app:layout_constraintTop_toBottomOf="@+id/textView27" />
+        app:layout_constraintTop_toBottomOf="@+id/textViewBlocksAverage" />
 
     <TextView
         android:id="@+id/textView30"
@@ -103,11 +103,11 @@
         android:layout_height="wrap_content"
         android:text="3P%:"
         android:textAppearance="@style/TextAppearance.AppCompat.Medium"
-        app:layout_constraintBaseline_toBaselineOf="@+id/textView29"
+        app:layout_constraintBaseline_toBaselineOf="@+id/textView3pAverage"
         app:layout_constraintEnd_toEndOf="@+id/textView28" />
 
     <TextView
-        android:id="@+id/textView29"
+        android:id="@+id/textView3pAverage"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="9dp"
@@ -115,7 +115,7 @@
         android:text="0%"
         android:textAppearance="@style/TextAppearance.AppCompat.Medium"
         app:layout_constraintStart_toEndOf="@+id/textView30"
-        app:layout_constraintTop_toBottomOf="@+id/textView31" />
+        app:layout_constraintTop_toBottomOf="@+id/textViewFgAverage" />
 
     <TextView
         android:id="@+id/textView32"
@@ -123,11 +123,11 @@
         android:layout_height="wrap_content"
         android:text="FT%:"
         android:textAppearance="@style/TextAppearance.AppCompat.Medium"
-        app:layout_constraintBaseline_toBaselineOf="@+id/textView33"
+        app:layout_constraintBaseline_toBaselineOf="@+id/textViewFtAverage"
         app:layout_constraintStart_toStartOf="@+id/textView30" />
 
     <TextView
-        android:id="@+id/textView33"
+        android:id="@+id/textViewFtAverage"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="9dp"
@@ -135,10 +135,10 @@
         android:text="0%"
         android:textAppearance="@style/TextAppearance.AppCompat.Medium"
         app:layout_constraintStart_toEndOf="@+id/textView32"
-        app:layout_constraintTop_toBottomOf="@+id/textView29" />
+        app:layout_constraintTop_toBottomOf="@+id/textView3pAverage" />
 
     <TextView
-        android:id="@+id/textView27"
+        android:id="@+id/textViewBlocksAverage"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="9dp"
@@ -146,10 +146,10 @@
         android:text="0.00"
         android:textAppearance="@style/TextAppearance.AppCompat.Medium"
         app:layout_constraintStart_toEndOf="@+id/textView26"
-        app:layout_constraintTop_toBottomOf="@+id/textView25" />
+        app:layout_constraintTop_toBottomOf="@+id/textViewStealsAverage" />
 
     <TextView
-        android:id="@+id/textView23"
+        android:id="@+id/textViewAssistsAverage"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="9dp"
@@ -157,10 +157,10 @@
         android:text="0.00"
         android:textAppearance="@style/TextAppearance.AppCompat.Medium"
         app:layout_constraintStart_toEndOf="@+id/textView22"
-        app:layout_constraintTop_toBottomOf="@+id/textView21" />
+        app:layout_constraintTop_toBottomOf="@+id/textViewReboundsAverage" />
 
     <TextView
-        android:id="@+id/textView21"
+        android:id="@+id/textViewReboundsAverage"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="9dp"
@@ -168,10 +168,10 @@
         android:text="0.00"
         android:textAppearance="@style/TextAppearance.AppCompat.Medium"
         app:layout_constraintStart_toEndOf="@+id/textView20"
-        app:layout_constraintTop_toBottomOf="@+id/textView19" />
+        app:layout_constraintTop_toBottomOf="@+id/textViewPointsAverage" />
 
     <TextView
-        android:id="@+id/textView19"
+        android:id="@+id/textViewPointsAverage"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="11dp"
@@ -181,5 +181,16 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@+id/textView18"
         app:layout_constraintTop_toBottomOf="@+id/textView7" />
+
+    <Button
+        android:id="@+id/buttonDone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="304dp"
+        android:text="Done"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
