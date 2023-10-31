@@ -11,7 +11,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="16dp"
-        android:text="Your Averages"
+        android:text="@string/your_averages"
         android:textAppearance="@style/TextAppearance.AppCompat.Large"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"
@@ -23,7 +23,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginEnd="9dp"
-        android:text="Points:"
+        android:text="@string/pointsAveragesText"
         android:textAppearance="@style/TextAppearance.AppCompat.Medium"
         app:layout_constraintBaseline_toBaselineOf="@+id/textViewPointsAverage"
         app:layout_constraintEnd_toStartOf="@+id/textViewPointsAverage"
@@ -34,7 +34,7 @@
         android:id="@+id/textView20"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Rebounds:"
+        android:text="@string/reboundsAveragesText"
         android:textAppearance="@style/TextAppearance.AppCompat.Medium"
         app:layout_constraintBaseline_toBaselineOf="@+id/textViewReboundsAverage"
         app:layout_constraintEnd_toEndOf="@+id/textView18" />
@@ -43,7 +43,7 @@
         android:id="@+id/textView22"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Assists:"
+        android:text="@string/assistsAveragesText"
         android:textAppearance="@style/TextAppearance.AppCompat.Medium"
         app:layout_constraintBaseline_toBaselineOf="@+id/textViewAssistsAverage"
         app:layout_constraintEnd_toEndOf="@+id/textView20" />
@@ -52,7 +52,7 @@
         android:id="@+id/textView24"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Steals:"
+        android:text="@string/stealsAveragesText"
         android:textAppearance="@style/TextAppearance.AppCompat.Medium"
         app:layout_constraintBaseline_toBaselineOf="@+id/textViewStealsAverage"
         app:layout_constraintEnd_toEndOf="@+id/textView22" />
@@ -63,7 +63,7 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="9dp"
         android:layout_marginTop="15dp"
-        android:text="0.00"
+        android:text="@string/stealsAverage"
         android:textAppearance="@style/TextAppearance.AppCompat.Medium"
         app:layout_constraintStart_toEndOf="@+id/textView24"
         app:layout_constraintTop_toBottomOf="@+id/textViewAssistsAverage" />
@@ -72,7 +72,7 @@
         android:id="@+id/textView26"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Blocks:"
+        android:text="@string/blocksAveragesText"
         android:textAppearance="@style/TextAppearance.AppCompat.Medium"
         app:layout_constraintBaseline_toBaselineOf="@+id/textViewBlocksAverage"
         app:layout_constraintEnd_toEndOf="@+id/textView24" />
@@ -81,7 +81,7 @@
         android:id="@+id/textView28"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="FG%:"
+        android:text="@string/fgAveragesText"
         android:textAppearance="@style/TextAppearance.AppCompat.Medium"
         app:layout_constraintBaseline_toBaselineOf="@+id/textViewFgAverage"
         app:layout_constraintEnd_toEndOf="@+id/textView26" />
@@ -92,7 +92,7 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="9dp"
         android:layout_marginTop="16dp"
-        android:text="0%"
+        android:text="@string/fgAverage"
         android:textAppearance="@style/TextAppearance.AppCompat.Medium"
         app:layout_constraintStart_toEndOf="@+id/textView28"
         app:layout_constraintTop_toBottomOf="@+id/textViewBlocksAverage" />
@@ -101,7 +101,7 @@
         android:id="@+id/textView30"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="3P%:"
+        android:text="@string/_3pAveragesText"
         android:textAppearance="@style/TextAppearance.AppCompat.Medium"
         app:layout_constraintBaseline_toBaselineOf="@+id/textView3pAverage"
         app:layout_constraintEnd_toEndOf="@+id/textView28" />
@@ -112,7 +112,7 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="9dp"
         android:layout_marginTop="16dp"
-        android:text="0%"
+        android:text="@string/_3pAverage"
         android:textAppearance="@style/TextAppearance.AppCompat.Medium"
         app:layout_constraintStart_toEndOf="@+id/textView30"
         app:layout_constraintTop_toBottomOf="@+id/textViewFgAverage" />
@@ -121,7 +121,7 @@
         android:id="@+id/textView32"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="FT%:"
+        android:text="@string/ftAveragesText"
         android:textAppearance="@style/TextAppearance.AppCompat.Medium"
         app:layout_constraintBaseline_toBaselineOf="@+id/textViewFtAverage"
         app:layout_constraintStart_toStartOf="@+id/textView30" />
@@ -132,7 +132,7 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="9dp"
         android:layout_marginTop="15dp"
-        android:text="0%"
+        android:text="@string/ftAverage"
         android:textAppearance="@style/TextAppearance.AppCompat.Medium"
         app:layout_constraintStart_toEndOf="@+id/textView32"
         app:layout_constraintTop_toBottomOf="@+id/textView3pAverage" />
@@ -143,7 +143,7 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="9dp"
         android:layout_marginTop="15dp"
-        android:text="0.00"
+        android:text="@string/blocksAverage"
         android:textAppearance="@style/TextAppearance.AppCompat.Medium"
         app:layout_constraintStart_toEndOf="@+id/textView26"
         app:layout_constraintTop_toBottomOf="@+id/textViewStealsAverage" />
@@ -154,7 +154,7 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="9dp"
         android:layout_marginTop="16dp"
-        android:text="0.00"
+        android:text="@string/assistsAverage"
         android:textAppearance="@style/TextAppearance.AppCompat.Medium"
         app:layout_constraintStart_toEndOf="@+id/textView22"
         app:layout_constraintTop_toBottomOf="@+id/textViewReboundsAverage" />
@@ -165,7 +165,7 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="9dp"
         android:layout_marginTop="19dp"
-        android:text="0.00"
+        android:text="@string/reboundsAverage"
         android:textAppearance="@style/TextAppearance.AppCompat.Medium"
         app:layout_constraintStart_toEndOf="@+id/textView20"
         app:layout_constraintTop_toBottomOf="@+id/textViewPointsAverage" />
@@ -176,7 +176,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="11dp"
         android:layout_marginEnd="19dp"
-        android:text="0.00"
+        android:text="@string/pointsAverage"
         android:textAppearance="@style/TextAppearance.AppCompat.Medium"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@+id/textView18"
@@ -187,7 +187,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginBottom="304dp"
-        android:text="Done"
+        android:text="@string/done"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"

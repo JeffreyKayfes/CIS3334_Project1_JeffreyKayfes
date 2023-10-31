@@ -2,6 +2,7 @@ package cis3334.cis3334_project1;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
 import android.content.Intent;
@@ -16,8 +17,15 @@ import com.google.firebase.database.DatabaseError;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.ValueEventListener;
 
+/**
+ * The `MainActivity` class represents the main activity of the application. It allows users
+ * to input basketball game statistics and view statistics data using a RecyclerView. This class
+ * manages the user interface, interaction with a Firebase database, and navigation to the
+ * `AveragesActivity` for displaying average statistics.
+ */
 public class MainActivity extends AppCompatActivity {
 
+    // Class fields representing various UI elements and data sources used in the MainActivity.
     EditText editTextPoints;
     EditText editTextRebounds;
     EditText editTextAssists;
@@ -30,11 +38,16 @@ public class MainActivity extends AppCompatActivity {
     EditText editTextFtm;
     EditText editTextFta;
     RecyclerView recyclerViewStats;
+    RecycleViewAdapter recycleViewAdapter;
     Button buttonAverages;
     Button buttonAddGame;
     GameFirebaseData gameDataSource;
     DatabaseReference myGameDbRef;
 
+    /**
+     * Called when the activity is created. Initializes the user interface components, Firebase data source,
+     * and sets up event listeners for buttons and database updates.
+     */
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -59,8 +72,12 @@ public class MainActivity extends AppCompatActivity {
         setupButtonAverages();
         setupButtonAddGame();
         setupFirebaseDataChange();
+        setupRecycleView();
     }
 
+    /**
+     * Sets up the behavior for the "Averages" button, which navigates to the `AveragesActivity`.
+     */
     private void setupButtonAverages() {
         buttonAverages = findViewById(R.id.buttonAverages);
         buttonAverages.setOnClickListener(new View.OnClickListener() {
@@ -72,6 +89,9 @@ public class MainActivity extends AppCompatActivity {
         });
     }
 
+    /**
+     * Sets up the behavior for the "Add Game" button, which adds a new game entry to the database.
+     */
     private void setupButtonAddGame() {
         buttonAddGame = findViewById(R.id.buttonAddGame);
         buttonAddGame.setOnClickListener(new View.OnClickListener() {
@@ -95,6 +115,9 @@ public class MainActivity extends AppCompatActivity {
         });
     }
 
+    /**
+     * Sets up the Firebase data change listener to retrieve and update game data from the Firebase database.
+     */
     private void setupFirebaseDataChange() {
         myGameDbRef = gameDataSource.open();
         myGameDbRef.addValueEventListener(new ValueEventListener() {
@@ -102,6 +125,7 @@ public class MainActivity extends AppCompatActivity {
             public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
                 Log.d("CIS3334", "Starting onDataChange()");        // debugging log
                 gameDataSource.updateGameList(dataSnapshot);
+                recycleViewAdapter.notifyDataSetChanged();
             }
 
             @Override
@@ -109,5 +133,16 @@ public class MainActivity extends AppCompatActivity {
                 Log.d("CIS3334", "onCancelled: ");
             }
         });
+    }
+
+    /**
+     * Sets up the RecyclerView to display game statistics using a custom adapter.
+     */
+    private void setupRecycleView() {
+        recyclerViewStats = findViewById(R.id.recyclerViewStats);
+        recycleViewAdapter = new RecycleViewAdapter(gameDataSource);
+        recyclerViewStats.setAdapter(recycleViewAdapter);
+        recyclerViewStats.setLayoutManager(new LinearLayoutManager(this));
+        recycleViewAdapter.notifyDataSetChanged();
     }
 }
